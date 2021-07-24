@@ -1,0 +1,20 @@
+{
+  "name": "math-race",
+  "version": "1.0.0",
+  "description": "Multiplayer game where you move forward by solving math problems",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "serve": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "0shuvo0",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

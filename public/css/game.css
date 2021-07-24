@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+.reace-container{
+    margin: 2em 150px;
+}
+
+.race-track{
+    padding-bottom: 1em;
+    position: relative;
+}
+.race-track:last-child{
+    padding-bottom: 0;
+}
+
+.race-track::before, .race-track::after{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 40px;
+    background: repeating-linear-gradient(#000 0%, #000 50%, #fff 50%, #fff 100%),
+		repeating-linear-gradient(90deg, #000 0%, #000 50%, #fff 50%, #fff 100%);
+	background-size: 20px 20px;
+	background-blend-mode: difference;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.race-track::before{
+    left: 100%;
+}
+.race-track::after{
+    right: 100%;
+}
+
+
+.race-track .car{
+    height: 50px;
+    width: 100px;
+    margin-left: 0;
+    transform: translateX(-100%);
+    transition: margin-left 0.5s, transform 0.3s;
+    position: relative;
+}
+.race-track .car.finished{
+    transform: translateX(0);
+}
+.race-track .car .you{
+    position: absolute;
+    bottom: 120%;
+    right: 0;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+}
+.car img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.btn{
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    background-color: #FF1654;
+    padding: 0.6em 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.question-box{
+    color: #fff;
+    background-color: #141414;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.problem{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.input-group{
+    display: flex;
+}
+.input-group .btn{
+    border-radius: 0 3px 3px 0;
+    box-shadow: none;
+    padding: 0.6em 0.7em;
+    width: 100px;
+}
+.input-group input{
+    border: none;
+    outline: none;
+    border-radius: 3px 0 0 3px;
+    padding: 0 1em;
+    background-color: rgba(255,255,255,0.7);
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    flex-grow: 1;
+}
+.input-group input::placeholder{
+    color: #ebebeb;
+}

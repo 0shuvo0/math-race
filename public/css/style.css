@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container{
+    width: 300px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 2em;
+}
+
+h1{
+    font-size: 1.5em;
+}
+.info{
+    font-size: 0.9em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: #c7c7c7;
+    margin: 1em 0 2em 0;
+}
+
+
+.or{
+    margin: 1em;
+    text-align: center;
+}
+
+
+.btn{
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    background-color: #FF1654;
+    padding: 0.6em 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.input-group{
+    display: flex;
+}
+.input-group .btn{
+    border-radius: 0 3px 3px 0;
+    box-shadow: none;
+    padding: 0.6em 0.7em;
+}
+.input-group input{
+    border: none;
+    outline: none;
+    border-radius: 3px 0 0 3px;
+    padding: 0 1em;
+    background-color: rgba(255,255,255,0.7);
+    color: #fff;
+    font-weight: bold;
+}
+.input-group input::placeholder{
+    color: #ebebeb;
+}

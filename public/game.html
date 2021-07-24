@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/game.css">
+    <title>Math Race</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Join code: <span class="join-code"></span></h1>
+        <p>Share this code with your friends so they can join.</p>
+    </div>
+
+    <div class="reace-container">
+        <div class="race-track">
+            <div class="car" id="self">
+                <p class="you">your car</p>
+                <img src="/img/1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container question-box">
+        <p class="problem">2 + 2 = </p>
+        <form class="input-group">
+            <input type="text" placeholder="Enter your answer">
+            <button type="submit" class="btn ans-btn">Go!!!</button>
+        </form>
+    </div>
+
+    <script src="/js/socket.io.min.js" integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh" crossorigin="anonymous"></script>
+    <script src="/js/game.js"></script>
+</body>
+</html>

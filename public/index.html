@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Math Race</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Math Racer</h1>
+        <p class="info">A multiplayer game where you move forward my sovling Math Eqations.</p>
+        <a class="btn" href="/new">New race</a>
+        <p class="or">or</p>
+        <div class="input-group">
+            <input type="text" placeholder="Join code">
+            <button class="btn join-btn">join</button>
+        </div>
+    </div>
+
+    <script>
+        var input = document.querySelector("input")
+        var joinBtn = document.querySelector(".join-btn")
+        joinBtn.addEventListener('click', function(){
+            if(!input.value.trim()) return
+            window.location = "/game/" + input.value.trim()
+        })
+    </script>
+</body>
+</html>
